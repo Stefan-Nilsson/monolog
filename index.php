@@ -14,7 +14,7 @@ use Monolog\Handler\BrowserConsoleHandler;
 
 // create a log channel
 $log = new Logger('logger');
-$log->pushHandler(new StreamHandler(__DIR__.'logs/info.log', Logger::WARNING));
+$log->pushHandler(new StreamHandler(__DIR__.'/logs/info.log', Logger::WARNING));
 
 // add records to the log
 $log->warning('Foo');
